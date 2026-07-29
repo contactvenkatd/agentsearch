@@ -73,7 +73,8 @@ function formatElementsForModel(elements) {
 async function runAgent(task) {
   const context = await chromium.launchPersistentContext(USER_DATA_DIR, {
     headless: false,
-    channel: 'chrome', // real Chrome, not bundled Chromium — needed for Google-synced autofill
+  
+
     viewport: { width: 1280, height: 900 }
   });
 
