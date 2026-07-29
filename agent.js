@@ -104,7 +104,7 @@ Decide the single next action. If the task is complete, use action "done".`
     });
 
     const response = await grok.chat.completions.create({
-      model: 'grok-4-3',
+      model: 'grok-4.3',
       max_tokens: 1024,
       tools: TOOLS,
       tool_choice: { type: 'function', function: { name: 'browser_action' } },
